@@ -126,7 +126,7 @@ Add details of the dependency that the web application needs in order to compile
 include::finish/pom.xml[tags=dependencies;!dependencies_test]
 ----
 
-The `HelloServlet.java` class depends on `javax.servlet-api` to compile. Maven will download this dependency from the Maven Central repository using the `groupId`, `artifactId`, and `version` details that you provide here. The dependency is set to `provided`, which means that the API is in the server runtime and doesn't need to be packaged by the application.
+The `HelloServlet.java` class depends on `servlet-3.1` to compile. Maven will download this dependency from the Maven Central repository using the `groupId`, `artifactId`, and `type` details that you provide here. The dependency is set to `provided`, which means that the API is in the server runtime and doesn't need to be packaged by the application.
 
 Configure the Maven plugins that build this project:
 
